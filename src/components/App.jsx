@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
+import Comment from './Comment';
+import Post from './Post';
+
 class App extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-					<a class="navbar-brand" href="#">
-						Chirper
-					</a>
-				</nav>
-
-				<main role="main" class="container">
-					<div class="row px-2 py-5 justify-content-center">
-						<h1>Chirper</h1>
+				<nav class="navbar text-white bg-primary mb-5">Chirper</nav>
+				<main role="main" className="container">
+					<div className="row jumbotron bg-secondary justify-content-center">
+						<h1 className="text-white">Chirper</h1>
 					</div>
+					<Comment />
+					<Post />
 				</main>
 			</React.Fragment>
 		);
