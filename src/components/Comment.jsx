@@ -4,9 +4,9 @@ class Comments extends Component {
 	render() {
 		return (
 			<div className="row">
-				<div className="col-md-12">
-					<h3 className="text-center">Recent Comments</h3>
-					<div className="card mt-3">
+				<div className="col-8 offset-2">
+					<h3 className="text-center mb-4">Recent Comments</h3>
+					<div className="card mb-4">
 						<div className="card-body">
 							<div className="float-left">
 								<div className="card-title">name</div>

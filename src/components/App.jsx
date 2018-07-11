@@ -6,9 +6,8 @@ class App extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<nav class="navbar text-white bg-primary mb-5">Chirper</nav>
-				<main role="main" className="container">
-					<div className="row jumbotron bg-secondary justify-content-center">
+				<main role="main">
+					<div className="row jumbotron bg-primary justify-content-center">
 						<h1 className="text-white">Chirper</h1>
 					</div>
 					<Comment />
