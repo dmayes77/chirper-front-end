@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Comment from './Comment';
 import Post from './Post';
 
 class App extends Component {
@@ -8,9 +7,8 @@ class App extends Component {
 			<React.Fragment>
 				<main role="main">
 					<div className="row jumbotron bg-primary justify-content-center">
-						<h1 className="text-white">Chirper</h1>
+						<h1 className="text-white display-3">Chirper</h1>
 					</div>
-					<Comment />
 					<Post />
 				</main>
 			</React.Fragment>
