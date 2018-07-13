@@ -54,7 +54,7 @@ class Post extends Component {
 								placeholder="Name"
 								className="form-control"
 								value={this.state.name}
-								onChange={event => this.onInputName(event.target.value)}
+								onChange={e => this.onInputName(e.target.value)}
 								required
 								autoFocus
 							/>
@@ -64,7 +64,7 @@ class Post extends Component {
 								className="form-control"
 								placeholder="Post 150 Character Max"
 								value={this.state.post}
-								onChange={event => this.onInputPost(event.target.value)}
+								onChange={e => this.onInputPost(e.target.value)}
 								required
 							/>
 						</div>
