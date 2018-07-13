@@ -33,12 +33,9 @@ class Post extends Component {
 
 	handleForm = event => {
 		event.preventDefault();
-		console.log(this.state.name);
-		console.log(this.state.post);
 		let arr = this.state.array;
 		arr.push(this.state.name + ' - ' + this.state.post);
 		this.setState({ array: arr });
-		console.log(arr);
 		this.clearForm();
 	};
 	render() {
