@@ -8,24 +8,28 @@ class Post extends Component {
 		this.state = {
 			name: '',
 			post: '',
-			array: []
+			array: [
+				'David - This is great!',
+				'April - Hello World!',
+				'Breslynn - I love my Daddy!'
+			]
+		};
+
+		this.clearForm = () => {
+			this.setState({
+				name: '',
+				post: ''
+			});
 		};
 	}
-
-	clearForm = () => {
-		this.setState({
-			name: '',
-			post: ''
-		});
-	};
 
 	onInputName = value => {
 		this.setState({ name: value });
 	};
 
-	onInputPost = value => {
+	onInputPost(value) {
 		this.setState({ post: value });
-	};
+	}
 
 	handleForm = event => {
 		event.preventDefault();
